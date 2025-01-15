@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            /* background: linear-gradient(120deg, #4CAF50, #81C784); */
+            color: #333;
+            padding: 20px;
+        }
+
+        .contact-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: #fff;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+            animation: fadeIn 1s ease-in-out;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .contact-image {
+            flex: 1;
+            min-width: 300px;
+            background: url('/image/contact-img.webp') no-repeat center center/cover;
+        }
+
+        .contact-content {
+            flex: 2;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .contact-header {
+            background: #388E3C;
+            color: white;
+            text-align: center;
+            padding: 30px 20px;
+            border-bottom: 5px solid #2E7D32;
+        }
+
+        .contact-header h1 {
+            font-size: 3rem;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+
+        .contact-header p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+
+        .contact-info, .contact-form {
+            padding: 30px;
+        }
+
+        .contact-info {
+            background: #F1F8E9;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+
+        .contact-info h2 {
+            font-size: 2rem;
+            margin-bottom: 15px;
+            color: #2E7D32;
+        }
+
+        .contact-info .detail {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+
+        .contact-info .detail span {
+            font-size: 1.5rem;
+            margin-right: 10px;
+            color: #388E3C;
+        }
+
+        .contact-info p {
+            font-size: 1rem;
+        }
+
+        .contact-info a {
+            color: #388E3C;
+            font-weight: 600;
+            text-decoration: none;
+        }
+
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+
+        .contact-form h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            color: #388E3C;
+        }
+
+        .contact-form form {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .form-group label {
+            font-weight: 500;
+            margin-bottom: 5px;
+            display: block;
+            color: #333;
+        }
+
+        .form-group input, .form-group textarea {
+            width: 100%;
+            padding: 12px 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 1rem;
+            transition: all 0.3s ease;
+        }
+
+        .form-group input:focus, .form-group textarea:focus {
+            border-color: #388E3C;
+            outline: none;
+            box-shadow: 0 0 5px rgba(56, 142, 60, 0.5);
+        }
+
+        .form-group textarea {
+            resize: none;
+            height: 120px;
+        }
+
+        .form-group button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1.2rem;
+            font-weight: 600;
+            transition: background-color 0.3s ease;
+        }
+
+        .form-group button:hover {
+            background-color: #388E3C;
+        }
+
+        @media (max-width: 768px) {
+            .contact-container {
+                flex-direction: column;
+            }
+
+            .contact-image {
+                height: 300px;
+            }
+
+            .contact-info {
+                margin-bottom: 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="contact-container">
+        <div class="contact-image"></div>
+        <div class="contact-content">
+            <div class="contact-header">
+                <h1>Contact Us</h1>
+                <p>We’re here to assist you. Reach out through the form or find us below.</p>
+            </div>
+            <div class="contact-info">
+                <h2>Contact Details</h2>
+                <div class="detail">
+                    <span>📍</span>
+                    <p>123 Pioneer Street, Business City</p>
+                </div>
+                <div class="detail">
+                    <span>📞</span>
+                    <p><a href="tel:+1234567890">+1 (234) 567-890</a></p>
+                </div>
+                <div class="detail">
+                    <span>✉️</span>
+                    <p><a href="mailto:info@example.com">info@example.com</a></p>
+                </div>
+                <div class="detail">
+                    <span>⏰</span>
+                    <p>Monday - Friday: 9:00 AM - 5:00 PM</p>
+                </div>
+            </div>
+            <div class="contact-form">
+                <h2>Get in Touch</h2>
+                <form action="#" method="post" onsubmit="console.log('Form submitted');">
+                    <div class="form-group">
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" name="name" placeholder="Your full name" required oninput="console.log('Name input:', this.value);">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" placeholder="Your email address" required oninput="console.log('Email input:', this.value);">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" placeholder="Your message" required oninput="console.log('Message input:', this.value);"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <button type="submit" onclick="console.log('Submit button clicked');">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
