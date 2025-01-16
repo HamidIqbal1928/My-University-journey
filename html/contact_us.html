@@ -6,189 +6,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: 'Poppins', sans-serif;
-            /* background: linear-gradient(120deg, #4CAF50, #81C784); */
-            color: #333;
-            padding: 20px;
-        }
-
-        .contact-container {
-            max-width: 1200px;
-            margin: 0 auto;
-            background: #fff;
-            border-radius: 10px;
-            overflow: hidden;
-            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
-            animation: fadeIn 1s ease-in-out;
-            display: flex;
-            flex-wrap: wrap;
-        }
-
-        @keyframes fadeIn {
-            from {
-                opacity: 0;
-                transform: translateY(20px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-
-        .contact-image {
-            flex: 1;
-            min-width: 300px;
-            background: url('/image/contact-img.webp') no-repeat center center/cover;
-        }
-
-        .contact-content {
-            flex: 2;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-        }
-
-        .contact-header {
-            background: #388E3C;
-            color: white;
-            text-align: center;
-            padding: 30px 20px;
-            border-bottom: 5px solid #2E7D32;
-        }
-
-        .contact-header h1 {
-            font-size: 3rem;
-            font-weight: 600;
-            margin-bottom: 10px;
-        }
-
-        .contact-header p {
-            font-size: 1.2rem;
-            opacity: 0.9;
-        }
-
-        .contact-info, .contact-form {
-            padding: 30px;
-        }
-
-        .contact-info {
-            background: #F1F8E9;
-            border-radius: 10px;
-            margin-bottom: 20px;
-        }
-
-        .contact-info h2 {
-            font-size: 2rem;
-            margin-bottom: 15px;
-            color: #2E7D32;
-        }
-
-        .contact-info .detail {
-            display: flex;
-            align-items: center;
-            margin-bottom: 15px;
-        }
-
-        .contact-info .detail span {
-            font-size: 1.5rem;
-            margin-right: 10px;
-            color: #388E3C;
-        }
-
-        .contact-info p {
-            font-size: 1rem;
-        }
-
-        .contact-info a {
-            color: #388E3C;
-            font-weight: 600;
-            text-decoration: none;
-        }
-
-        .contact-info a:hover {
-            text-decoration: underline;
-        }
-
-        .contact-form h2 {
-            font-size: 2rem;
-            margin-bottom: 20px;
-            color: #388E3C;
-        }
-
-        .contact-form form {
-            display: flex;
-            flex-direction: column;
-            gap: 20px;
-        }
-
-        .form-group label {
-            font-weight: 500;
-            margin-bottom: 5px;
-            display: block;
-            color: #333;
-        }
-
-        .form-group input, .form-group textarea {
-            width: 100%;
-            padding: 12px 15px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-            font-size: 1rem;
-            transition: all 0.3s ease;
-        }
-
-        .form-group input:focus, .form-group textarea:focus {
-            border-color: #388E3C;
-            outline: none;
-            box-shadow: 0 0 5px rgba(56, 142, 60, 0.5);
-        }
-
-        .form-group textarea {
-            resize: none;
-            height: 120px;
-        }
-
-        .form-group button {
-            background-color: #4CAF50;
-            color: white;
-            padding: 12px 20px;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            font-size: 1.2rem;
-            font-weight: 600;
-            transition: background-color 0.3s ease;
-        }
-
-        .form-group button:hover {
-            background-color: #388E3C;
-        }
-
-        @media (max-width: 768px) {
-            .contact-container {
-                flex-direction: column;
-            }
-
-            .contact-image {
-                height: 300px;
-            }
-
-            .contact-info {
-                margin-bottom: 0;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/style/contact us.css">
 </head>
 
 <body>
+    <header class="header">
+        <div class="logo">Hamid's Journey</div>
+        <nav class="navbar">
+          <a href="/index.html"><span data-text="Home">Home</span></a>
+          <a href="#about"><span data-text="About">About</span></a>
+          <a href="#journey"><span data-text="My University">My University</span></a>
+          <a href="/html/Friends&Memories.html"><span data-text="Friends and Memories">Friends and Memories</span> </a>
+          <a href="#contact"><span data-text="Contact">Contact</span></a>
+        </nav>
+        <div class="menu-icon1">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+        <div class="dropdown-menu1">
+          <a href="/index.html">Home</a>
+          <a href="#about">About</a>
+          <a href="#journey">My University</a>
+          <a href="/html/Friends&Memories.html">Friends and Memories</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </header>
+
+        <!-- Hero Section -->
+  <section class="hero2">
+    <div class="hero-content">
+      <h1 style="color: black;">Contact us
+      </h1>
+      <!-- <p>Explore the milestones, memories, and moments that shaped my path.</p> -->
+      <!-- <button onclick="window.location.href='#overview'">Discover More</button> -->
+    </div>
+  </section>
+
+  <!-- contact form -->
     <div class="contact-container">
         <div class="contact-image"></div>
         <div class="contact-content">
@@ -237,6 +93,65 @@
             </div>
         </div>
     </div>
+     <!-- Footer Section -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-columns">
+        <!-- About Us Section -->
+        <div class="footer-column">
+          <div class="about-logo">
+            <img src="/image/white_on_trans.png" alt="Logo" />
+          </div>
+          
+          <h3>University of Education</h3>
+          <p>
+            A platform where unforgettable memories are created. Join us on this
+            journey to celebrate life and friendship.
+          </p>
+          <ul class="social-icons">
+            <li><a href="https://www.facebook.com/hamid.iqbal.12576049"><i class="fab fa-facebook-f"></i></a></li>
+            <li><a href="https://github.com/HamidIqbal1928"><i class="fab fa-github"></i></a></li>
+            <li><a href="https://www.instagram.com/hamid_iqbal77/ "><i class="fab fa-instagram"></i></a></li>
+            <li><a href="https://www.linkedin.com/in/hamid-iqbal-a50430247/"><i class="fab fa-linkedin-in"></i></a></li>
+          </ul>
+        </div>
+  
+        <!-- Quick Links -->
+        <div class="footer-column">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About us</a></li>
+            <li><a href="#gallery">My University</a></li>
+            <li><a href="#friends-memories">Friends & Memories</a></li>
+            <li><a href="#contact">Contact us</a></li>
+          </ul>
+        </div>
+  
+        <!-- Newsletter Subscription -->
+        <div class="footer-column">
+          <h3>Newsletter</h3>
+          <p>Subscribe to get the latest updates and memories delivered to your inbox.</p>
+          <form class="newsletter-form">
+            <input type="email" placeholder="Enter your email" required>
+            <button type="submit">Subscribe</button>
+          </form>
+        </div>
+  
+        <!-- Contact Information -->
+        <div class="footer-column">
+          <h3>Contact Us</h3>
+          <p><i class="fas fa-phone-alt"></i> +92 321 9326163</p>
+          <p><i class="fas fa-envelope"></i> hamid313500@gmail.com</p>
+          <p><i class="fas fa-map-marker-alt"></i> Chak 28 W/B vehari,Punjhab,Pakistan</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Memories. All rights reserved. Designed with ❤ by Hamid.</p>
+      </div>
+    </div>
+  </footer>
+    <script src="/script.js"></script>
 </body>
 
 </html>
