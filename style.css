@@ -193,11 +193,47 @@
     font-size: 2.8rem;
     margin-bottom: 1rem;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    animation: fadeIn 1s ease-in-out; /* Fade in animation */
+  }
+  /* Fade-in animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-1000px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+  /* Fade-left animation */
+  @keyframes fadeleft {
+    from {
+      opacity: 0;
+      transform: translateX(-100px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  /* Fade-right animation */
+  @keyframes faderight {
+    from {
+      opacity: 0;
+      transform: translateX(100px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
   }
 
   .hero p {
     margin-bottom: 1.5rem;
     font-size: 1.2rem;
+    animation: fadeleft 1s ease-in-out; /* Fade in animation */
   }
 
   .hero button {
@@ -253,6 +289,7 @@
     border-radius: 50%;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    animation: fadeleft 3s ease-in-out; /* Fade left animation */
   }
   
   .about-image img:hover {
@@ -269,12 +306,14 @@
     font-size: 2.5rem;
     margin-bottom: 1rem;
     color: goldenrod;
+    animation: faderight 2s ease-in-out; /* Fade right animation */
   }
   
   .about-content p {
     margin-bottom: 1.5rem;
     font-size: 1.2rem;
     line-height: 1.8;
+    animation: faderight 2s ease-in-out; /* Fade right animation */
   }
   
   .about-content button {
@@ -286,6 +325,7 @@
     border-radius: 25px;
     cursor: pointer;
     transition: transform 0.3s ease, background 0.3s ease;
+    animation: faderight 2s ease-in-out; /* Fade right animation */
   }
   
   .about-content button:hover {
@@ -326,6 +366,7 @@
     width: 100%;
     text-align: center;
     padding: 1.5rem;
+    animation: fadeleft 3s ease-in-out; /* Fade in animation */
   }
   
   .academic-card:hover {
@@ -432,6 +473,7 @@
     height: 100%;
     display: block;
     object-fit: cover;
+    animation: fadeIn 3s ease; /* Fade in animation */
   }
   
   /* Title Styling */
