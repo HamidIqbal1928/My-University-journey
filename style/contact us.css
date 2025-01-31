@@ -20,6 +20,8 @@ body {
     color: white;
     position: relative;
   }
+ 
+
   
   .logo {
     font-size: 1.5em;
@@ -114,9 +116,9 @@ body {
   }
 
   /* Add this class when the user scrolls */
-.header.scrolled {
-    background-color: white; /* White background on scroll */
-    color: black; /* Black text on scroll */
+  .header.scrolled {
+    background-color: rgba(0, 0, 0, 0.578); /* White background on scroll */
+    color: white; /* Black text on scroll */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add shadow on scroll */
   }
 
@@ -187,7 +189,7 @@ body {
 
   .hero2 {
     height: 100vh;
-    background: url('https://itchronicles.com/wp-content/uploads/2022/12/AI-Powered-Conversational-Intelligence-1024x637.jpg') no-repeat center center/cover;
+    background: url('https://static.wixstatic.com/media/2d644f_4c5f920476d44fc7b63c5f4ad095f82f~mv2.jpg/v1/fill/w_980,h_494,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/2d644f_4c5f920476d44fc7b63c5f4ad095f82f~mv2.jpg') no-repeat center center/cover;
     display: flex;
     align-items: center;
     justify-content: center;
