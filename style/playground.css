@@ -1,0 +1,120 @@
+/* Global Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f8f9fa;
+    text-align: center;
+}
+
+h2 {
+    font-size: 28px;
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+
+/* 🌟 Hero Section */
+.hero1 {
+    background: url('https://media.istockphoto.com/id/1405637348/photo/red-cricket-ball.jpg?s=612x612&w=0&k=20&c=DBkyp2Pp7AZOtqJrn9daux-NHl7ZwdDC5VnH8mCSZrE=') center/cover no-repeat;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    position: relative;
+}
+
+.hero1::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.hero-text {
+    position: relative;
+    z-index: 1;
+}
+.hero-text h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.hero-text p {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+/* 🌳 Features Section */
+.features {
+    max-width: 1000px;
+    margin: auto;
+    padding: 40px 0;
+}
+
+.feature-box {
+    display: flex;
+    align-items: center;
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.feature-box:hover {
+    transform: translateY(-5px);
+}
+
+.feature-box img {
+    width: 100px;
+    margin-right: 20px;
+}
+
+.reverse {
+    flex-direction: row-reverse;
+}
+
+/* 🏀 Sports Section */
+.sports-grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.sports-card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+    width: 150px;
+}
+
+.sports-card img {
+    width: 80px;
+    margin-bottom: 10px;
+}
+
+/* 📸 Gallery */
+.gallery-container {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.gallery-container img {
+    width: 30%;
+    border-radius: 10px;
+}
+
+/* 📍 Contact */
+.contact {
+    background: #2c3e50;
+    color: white;
+    padding: 40px;
+}

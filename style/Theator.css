@@ -1,0 +1,119 @@
+/* Global Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f8f9fa;
+    text-align: center;
+}
+/* Hero Section */
+.hero1 {
+    background: url('/image/Theator.jpg') center/cover no-repeat;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    position: relative;
+}
+
+.hero1::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.hero-text {
+    position: relative;
+    z-index: 1;
+}
+.hero-text h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.hero-text p {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.features-section {
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+    padding: 40px 0;
+}
+
+.section-title {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 40px;
+    color: #333;
+}
+
+/* Feature Box Styling */
+.feature {
+    display: flex;
+    align-items: center;
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.feature:hover {
+    transform: translateY(-5px);
+}
+
+/* Feature Images */
+.feature-image img {
+    width: 150px;
+    height: auto;
+}
+
+/* Feature Text */
+.feature-text {
+    flex: 1;
+    text-align: left;
+    padding: 20px;
+}
+
+.feature-text h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #007bff;
+}
+
+.feature-text p {
+    font-size: 16px;
+    color: #555;
+}
+
+/* Reverse Layout for Alternate Rows */
+.reverse {
+    flex-direction: row-reverse;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .feature, .reverse {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .feature-image img {
+        width: 120px;
+        margin-bottom: 10px;
+    }
+
+    .feature-text {
+        text-align: center;
+    }
+}
