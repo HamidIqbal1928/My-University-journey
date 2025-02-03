@@ -81,25 +81,75 @@ h2 {
 }
 
 /* 🏀 Sports Section */
+.sports {
+    text-align: center;
+    padding: 20px;
+}
+
+.sports h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
 .sports-grid {
-    display: flex;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     gap: 20px;
+    justify-content: center;
+    align-items: center;
 }
 
 .sports-card {
-    background: white;
-    padding: 20px;
+    background: #f8f8f8;
     border-radius: 10px;
-    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
-    width: 150px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.sports-card:hover {
+    transform: scale(1.05);
 }
 
 .sports-card img {
     width: 80px;
+    height: auto;
     margin-bottom: 10px;
 }
 
+.sports-card h3 {
+    font-size: 1.2rem;
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+    .sports-grid {
+        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    }
+}
+
+@media (max-width: 480px) {
+    .sports-grid {
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    }
+
+    .sports h2 {
+        font-size: 1.5rem;
+    }
+
+    .sports-card {
+        padding: 15px;
+    }
+
+    .sports-card img {
+        width: 60px;
+    }
+
+    .sports-card h3 {
+        font-size: 1rem;
+    }
+}
 /* 📸 Gallery */
 .gallery-container {
     display: flex;
