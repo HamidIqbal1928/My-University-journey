@@ -7,12 +7,8 @@
   body {
     font-family: 'Arial', sans-serif;
     line-height: 1.6;
-  }
-  body {
     margin: 0;
-    font-family: Arial, sans-serif;
   }
-  
   .header {
     display: flex;
     justify-content: space-between;
@@ -116,7 +112,7 @@
   .button-container {
     text-align: end;
     margin-top: -94px;
-    margin-right: 6rem;
+    margin-right: 2rem;
 }
 
 .next-button {
@@ -174,6 +170,9 @@
   
     .hero-content p {
       font-size: 1rem; /* Smaller font size for mobile screens */
+    }
+    .next-button{
+      margin-left: 2rem;
     }
   }
   

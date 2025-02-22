@@ -1,0 +1,140 @@
+/* New Elegant Background */
+.gallery-section {
+
+    width: 90%;
+    margin: auto;
+    text-align: center;
+    padding: 40px 0;
+    background: transparent;  /* Soft Light Gray */
+    border-radius: 10px;
+}
+
+/* Header Section */
+.gallery-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 80px;
+    margin-bottom: 70px;
+}
+
+/* Updated Heading */
+.section-title1 {
+    font-size: 32px;
+    font-weight: bold;
+    color: #1e3a8a;
+    text-transform: uppercase;
+}
+
+/* Updated Filter Buttons */
+.filter-buttons {
+    display: flex;
+    gap: 12px;
+}
+
+.filter-btn {
+    background: #007bff; 
+    color: white;
+    border: none;
+    padding: 10px 18px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: 0.3s;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.filter-btn:hover, .filter-btn.active {
+    background: #0056b3; 
+    transform: translateY(-3px);
+}
+
+/* 🌟 New Stylish Dropdown */
+.dropdown {
+    display: none;
+}
+
+#gallery-filter {
+    padding: 12px;
+    border-radius: 8px;
+    font-size: 16px;
+    background: white;
+    border: 2px solid #007bff;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+    outline: none;
+}
+
+/* New Hover Effect for Dropdown */
+/* #gallery-filter:hover {
+    background: #007bff;
+    color: white;
+} */
+
+/* New Focus Effect */
+/* #gallery-filter:focus {
+    border-color: #0056b3;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+} */
+
+/* Updated Gallery Grid */
+.gallery-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+/* Updated Gallery Items */
+.gallery-item {
+    width: 250px;
+    height: 250px;
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    position: relative;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+}
+
+.gallery-item:hover img {
+    transform: scale(1.1);
+}
+
+.gallery-item:hover {
+    transform: scale(1.05);
+}
+
+/* Fade-in Animation */
+.gallery-item {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 0.6s forwards;
+}
+
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive: Show Dropdown on Mobile */
+@media (max-width: 768px) {
+    .filter-buttons {
+        display: none;
+    }
+    .dropdown {
+        display: block;
+    }
+}

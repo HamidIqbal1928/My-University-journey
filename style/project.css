@@ -92,9 +92,9 @@ p {
 
  /* Hero Section */
  .hero1 {
-  background-image: url('https://drom.org.mk/wp-content/uploads/2021/02/project-planning-header@2x.png'); /* Path to your image */
+  background-image: url('https://kimonservices.com/wp-content/uploads/2023/09/Effective-project-management-tools-1024x1024.jpg') ; /* Path to your image */
   background-size: cover; /* Ensures the image covers the entire section */
-  background-position: 20% 23%; /* Centers the image */
+  background-position: 80% 23%; /* Centers the image */
   height: 100vh; /* Full viewport height */
   display: flex;
   align-items: center;
