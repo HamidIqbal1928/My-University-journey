@@ -205,7 +205,7 @@
         Share your amazing experiences with us. We’d love to feature your story!
       </p>
   
-      <div class="submission-form">
+      <!-- <div class="submission-form">
         <h3>Submit Your Memory</h3>
         <form id="memoryForm" action="mailto:hamid313500@gmail.com" method="post" enctype="text/plain">
           <input type="text" name="user_name" placeholder="Your Name" class="form-input" required>
@@ -213,7 +213,17 @@
           <textarea name="message" placeholder="Share your experience..." class="form-textarea" required></textarea>
           <input type="file" id="memoryImage" class="form-file" accept="image/*" required>
       <button type="submit" class="form-btn" >Submit Memory</button>
+        </form>
+      </div> -->
 
+       <div class="submission-form">
+        <h3>Submit Your Memory</h3>
+        <form id="memoryForm" action="https://formspree.io/f/myzkjkdk" method="post">
+          <input type="text" name="name" placeholder="Your Name" class="form-input" required>
+          <input type="email" name="email" placeholder="Your Email" class="form-input" required>
+          <textarea name="message" placeholder="Share your experience..." class="form-textarea" required></textarea>
+          <input type="file" id="memoryImage" class="form-file"  name="attachment" accept="image/png, image/jpeg" required>
+      <button type="submit" class="form-btn" >Submit Memory</button>
         </form>
       </div>
     </div>
